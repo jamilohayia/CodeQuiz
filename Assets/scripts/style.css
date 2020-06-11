@@ -13,3 +13,13 @@
     text-align: center;
     cursor: pointer;
 }
+
+.hide {
+  display: none;
+}
+
+#finalScore {
+
+display: none;
+
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>NBA Quiz</title>
     
     <!-- CSS sheets -->
     <link rel="stylesheet" href="./reset.css">
@@ -33,7 +33,7 @@
 
     <!-- Introdocution for the initial HTML page -->
     <div class="jumbotron" id="Introduction">
-        <div class="container">
+        <div class="intro-container">
             <h1 class="display-4">NBA Quiz</h1>
             <p class="lead"> How's your sports knowledge? Good I hope! You will have 60 seconds to answer the following 5 questions about the NBA. Be careful though, if you answer a question incorrectly, 7 seconds will be deducted from the timer. 
                 Save your score after the quiz is finished and try to beat your score next time! 
@@ -41,10 +41,32 @@
         </div>
     </div>
 
-    <!-- Button class for the "Start the Quiz!" button -->
-<button id ="start" class="btn">Start the Quiz!</button>   
+    <!-- Container for questions -->
+    <div class="container">  
+        <div id = "question-container" class="hide">
+        <div id = "question">Question</div>
+            <div id = "answer-buttons" class="btn-grid">
+            <button class="btn" value = 0>Answer</button>
+            <button class="btn" value = 1>Answer</button>
+            <button class="btn" value = 2>Answer</button>
+            <button class="btn" value = 3>Answer</button>
+            </div>
+        </div>
+    </div>
+
+<button id ="start" class="btn">Start the Quiz!</button>  
 
 
+<div id="finalScore">
+    <h3>You're done!</h3>
+    <p>Your Final Score is:<span id="score"></span></p>
+    <form id = "initials">
+        <label>Your Initials: </label>
+        <input type="text" id="userInput" />
+        <input type="button" value="Submit" id="submitInfo" />
+    </form>
+
+</div>
 
 
 <script src="./script.js"></script>
