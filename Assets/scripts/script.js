@@ -37,6 +37,12 @@ var questions = [
 ]
 
 
+
+
+
+
+
+
 // function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 // 	function showQuestions(questions, quizContainer){
@@ -67,11 +73,20 @@ console.log("Javascript");
 
 function startQuiz () {
 
-// Timer 
+    setInterval( function(){
 
-var x = set
+        timeCounter--;
+
+        if( timeCounter >= 0 ){
+            id = document.getElementById("counter");
+            id.innerHTML = timeCounter;
+        }
 
 
+    },1000);
+
+
+    
 
 }
 
