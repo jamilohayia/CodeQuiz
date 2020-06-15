@@ -9,6 +9,7 @@ var questionContainerElement = document.getElementById ('question-container')
 var introduction = document.querySelector("#Introduction");
 var timeCounter = 60;
 var interval;
+var currentQuestion = 0;
 var correctAnswers = 0;
 var wrongAnswers = 0;
 var questions = [
@@ -43,30 +44,7 @@ var questions = [
         answer: 1,
     },
 
-]
-
-
-
-
-// function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-
-// 	function showQuestions(questions, quizContainer){
-// 		// code will go here
-// 	}
-
-// 	function showResults(questions, quizContainer, resultsContainer){
-// 		// code will go here
-// 	}
-
-// 	// show the questions
-// 	showQuestions(questions, quizContainer);
-
-// 	// when user clicks submit, show results
-// 	submitButton.onclick = function(){
-// 		showResults(questions, quizContainer, resultsContainer);
-// 	}
-// }
-
+];
 
 
 function startQuiz () {
@@ -77,30 +55,20 @@ function startQuiz () {
         if( timeCounter >= 0 ){
             id = document.getElementById("counter");
             id.innerHTML = timeCounter;
+           
         }
+         
     },1000);
 
     console.log("Started")
     startBtn.classList.add('hide')
     questionContainerElement.classList.remove('hide')
     introduction.classList.add('hide')
-    
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
 
 }
 
+function displayQuestion () {
+document.getElementById().innerHTML = questions;
+
+}
 
