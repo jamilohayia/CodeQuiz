@@ -46,16 +46,56 @@ function startQuiz () {
 
 // Function to display a question
 function displayQuestion () {
+    console.log (questions,"console log questions")
     questionElement.innerText = questions[currentQuestion].question
     let q = questions[runningQuestion];
     choiceA.innerHTML = q.choiceA;
+   
+ 
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
+    score = 0;
 }
 
 
+// Loop through the array of questions 
+// for (var i = 0; i < questions[currentQuestion].question)
+
 // Check Answer 
 
+function checkAnswer() {
+    choiceA.addEventListener("click", function(){
+        console.log("buttonA")
+    })
+    document.addEventListener("click", function(event){
+        console.log("event",event.target);
+// if (guess === correct) {
+    //     console.log(guess);
+    // } else {
+    //     // Counter drops 5 seconds for every wrong answer
+    //     counter = counter -= 5;
+    // }
+    })
 
+    
+    // guess = parseInt($(this).attr("value"))
+    // let correct = questions[currentQuestion].answer;
+
+    
+
+    // currentQuestion++;
+
+}
+
+checkAnswer();
+//     if (currentQuestion === questions.length) {
+//         showResults();
+//         // stopCounter(interval);
+
+//     } else {
+//         $("#btn-grid").hide();
+//         setTimeout(showQuestion);
+//     }
+// }
 
