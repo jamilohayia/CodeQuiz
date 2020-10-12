@@ -25,6 +25,57 @@ var wrongAnswers = 0;
 var runningQuestion = 0;
 var score = 0;
 
+
+var questions = [
+
+    {
+        question: "How many teams are in the NBA?",
+        choiceA: "30",
+        choiceB: "32",
+        choiceC: "28",
+        choiceD: "40",
+        answer: 'choiceA',
+    },
+        
+    {      
+        question: "Who won the MVP during the 2018-2019 season?",
+        choiceA: "James Harden",
+        choiceB: "Lebron",
+        choiceC: "Kawhi",
+        choiceD: "Giannis",
+        answer: 'choiceD',
+    },
+
+    {
+        question: "What is the most amount of points scored in a single game by one player?",
+        choiceA: "110",
+        choiceB: "100",
+        choiceC: "81",
+        choiceD: "72",
+        answer: 'choiceB',
+    },
+
+    {
+        question: "What was the second NBA team that Lebron played for?",
+        choiceA: "Cavaliers",
+        choiceB: "Lakers",
+        choiceC: "Heat",
+        choiceD: "Knicks",
+        answer: 'choiceC',      
+    },
+
+    {
+        question: "Who was the most recent #1 overall pick?",
+        choiceA: "Ben Simmons",
+        choiceB: "Zion Williamson",
+        choiceC: "Deandre Ayton",
+        choiceD: "Karl-Anthony Towns",
+        answer: 'choiceB',    
+    },
+
+];
+
+
 // This function initiates the quiz
 function startQuiz () {
 
@@ -64,23 +115,37 @@ function displayQuestion () {
 
 // Check Answer 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 function checkAnswer() {
+    guess = parseInt($(this).attr("value"))
+    let correct = questions[currentQuestion].answer;
     choiceA.addEventListener("click", function(){
         console.log("buttonA")
     })
     document.addEventListener("click", function(event){
         console.log("event",event.target);
-// if (guess === correct) {
-    //     console.log(guess);
-    // } else {
-    //     // Counter drops 5 seconds for every wrong answer
-    //     counter = counter -= 5;
-    // }
+if (guess === correct) {
+        console.log(guess);
+    } else {
+        // Counter drops 5 seconds for every wrong answer
+        counter = counter -= 5;
+    }
     })
 
     
-    // guess = parseInt($(this).attr("value"))
-    // let correct = questions[currentQuestion].answer;
+
 
     
 
@@ -88,7 +153,7 @@ function checkAnswer() {
 
 }
 
-checkAnswer();
+// checkAnswer();
 //     if (currentQuestion === questions.length) {
 //         showResults();
 //         // stopCounter(interval);
