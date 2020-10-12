@@ -113,19 +113,8 @@ function displayQuestion () {
 // Loop through the array of questions 
 // for (var i = 0; i < questions[currentQuestion].question)
 
+
 // Check Answer 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function checkAnswer() {
@@ -143,24 +132,10 @@ if (guess === correct) {
         counter = counter -= 5;
     }
     })
+   
 
-    
-
-
-    
-
-    // currentQuestion++;
+    currentQuestion++;
 
 }
 
-// checkAnswer();
-//     if (currentQuestion === questions.length) {
-//         showResults();
-//         // stopCounter(interval);
-
-//     } else {
-//         $("#btn-grid").hide();
-//         setTimeout(showQuestion);
-//     }
-// }
 
