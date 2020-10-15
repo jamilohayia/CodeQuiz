@@ -152,6 +152,7 @@ $(document).ready(function () {
         $("#start").show();
         $("#timer").show();
         $("#high-score").hide();
+        
     })
 
     // Click event to allow user to clear out the Leaderboard
