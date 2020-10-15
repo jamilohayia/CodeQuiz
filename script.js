@@ -30,7 +30,7 @@ var questions = [
     },
     {
         title: "Who was the most recent #1 overall pick?",
-        answers: ["Ben Simmons", "Zion Williamson", "Deandre Ayton", "Karl-Anthony Towns"],
+        answers: ["Ben Simmons", "Zion Williamson", "Deandre Ayton", "Ja Morant"],
         correctAnswer: 1,
     },
 ];
