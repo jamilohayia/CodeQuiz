@@ -3,13 +3,13 @@
 
 #timer {
 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
 #time {
 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -22,7 +22,7 @@
       0px;
     color: hsl(0, 0%, 100%);
     display: inline-block;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 22px;
     margin: 16px 16px 16px 20px;
     padding: 14px 34px;
@@ -34,7 +34,7 @@
 
 
 .display-4 {
-    font-size: 100px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 100px;
     font-weight: bol;
@@ -43,7 +43,7 @@
 
 .lead 
 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bol;
 }
 
@@ -76,7 +76,7 @@ hr {
 }
 
 #quiz h2 {
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 200px;
     margin-bottom: 40px;
 }
@@ -101,7 +101,7 @@ hr {
     font-weight: 300;
     padding: 10px;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
